@@ -25,13 +25,13 @@
  - /crm/costumers/<int:id>/ [GET, PUT, DELETE]
 
 ## FLUXO DOS DADOS:
-  1 - Website lead forms POST
-  1.1 - Digital marketing lead POST (automated with task)
-  1.2 -CRM lead POST (automated with task)
-  2 - CRM lead PUT qualified = true 
-  2.1 - Send email to lead (automated with task)
-  3 - Website costumer forms POST
-  3.1 - CRM costumer POST (automated with task)
+  - 1  : Website lead forms POST
+  - 1.1: Digital marketing lead POST (automated with task)
+  - 1.2: CRM lead POST (automated with task)
+  - 2  : CRM lead PUT qualified = true 
+  - 2.1: Send email to lead (automated with task)
+  - 3  : Website costumer forms POST
+  - 3.1: CRM costumer POST (automated with task)
 
 ## OBSERVAÇÕES:
  * 1 - A task de envio de email ao qualificar o lead no CRM só funcionará se for especificado no arquivo .env as variáveis: EMAIL_ADDRESS e EMAIL_PASSWORD, credenciais obrigatoriamente de uma conta do gmail.
@@ -39,6 +39,7 @@
 
 ## REFERENCIAS:
  - Monitoring a Dockerized Celery Cluster with Flower: https://www.distributedpython.com/2018/10/13/flower-docker/
+ - Dockerizing Django with Postgres, Redis and Celery: https://soshace.com/dockerizing-django-with-postgres-redis-and-celery/
  - Message Queues with Celery, Redis, and Django: https://tamerlan.dev/message-queues-with-celery-redis-and-django/
  - Asynchronous Tasks with Celery + Redis in Django: https://melvinkoh.me/asynchronous-tasks-with-celery-redis-in-django-cjye4tgaw000luns1ngthq609
  - Django Rest Framework Docs: https://www.django-rest-framework.org
