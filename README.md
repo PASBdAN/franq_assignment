@@ -12,17 +12,21 @@
  - docker-compose build
  - docker compose up
 
+## PORTAS:
+ - :8000 -> Django
+ - :8888 -> Flower
+
 ## ENDPOINTS:
- - /leads/ [GET, POST]
- - /leads/<<int:id>>/ [GET, PUT, DELETE]
- - /marketing/leads/ [GET, POST]
- - /marketing/leads/<<int:id>>/ [GET, PUT, DELETE]
- - /crm/leads/ [GET, POST]
- - /crm/leads/<<int:id>>/ [GET, PUT, DELETE]
- - /costumers/ [GET, POST]
- - /costumers/<<int:id>>/ [GET, PUT, DELETE]
- - /crm/costumers/ [GET, POST]
- - /crm/costumers/<<int:id>>/ [GET, PUT, DELETE]
+ - :8000/leads/ [GET, POST]
+ - :8000/leads/<<int:id>>/ [GET, PUT, DELETE]
+ - :8000/marketing/leads/ [GET, POST]
+ - :8000/marketing/leads/<<int:id>>/ [GET, PUT, DELETE]
+ - :8000/crm/leads/ [GET, POST]
+ - :8000/crm/leads/<<int:id>>/ [GET, PUT, DELETE]
+ - :8000/costumers/ [GET, POST]
+ - :8000/costumers/<<int:id>>/ [GET, PUT, DELETE]
+ - :8000/crm/costumers/ [GET, POST]
+ - :8000/crm/costumers/<<int:id>>/ [GET, PUT, DELETE]
 
 ## FLUXO DOS DADOS:
   - 1  : Website lead forms POST
