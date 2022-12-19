@@ -14,15 +14,15 @@
 
 ## ENDPOINTS:
  - /leads/ [GET, POST]
- - /leads/<int:id>/ [GET, PUT, DELETE]
+ - /leads/<<int:id>>/ [GET, PUT, DELETE]
  - /marketing/leads/ [GET, POST]
- - /marketing/leads/<int:id>/ [GET, PUT, DELETE]
+ - /marketing/leads/<<int:id>>/ [GET, PUT, DELETE]
  - /crm/leads/ [GET, POST]
- - /crm/leads/<int:id>/ [GET, PUT, DELETE]
+ - /crm/leads/<<int:id>>/ [GET, PUT, DELETE]
  - /costumers/ [GET, POST]
- - /costumers/<int:id>/ [GET, PUT, DELETE]
+ - /costumers/<<int:id>>/ [GET, PUT, DELETE]
  - /crm/costumers/ [GET, POST]
- - /crm/costumers/<int:id>/ [GET, PUT, DELETE]
+ - /crm/costumers/<<int:id>>/ [GET, PUT, DELETE]
 
 ## FLUXO DOS DADOS:
   - 1  : Website lead forms POST
