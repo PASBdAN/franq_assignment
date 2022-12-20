@@ -37,6 +37,8 @@
   - 3  : Website costumer forms POST
   - 3.1: CRM costumer POST (automated with task)
 
+### Cada módulo no Django tem um arquivo tasks.py que contém as automações do Celery.
+
 ## OBSERVAÇÕES:
  * 1 - A task de envio de email ao qualificar o lead no CRM só funcionará se for especificado no arquivo .env as variáveis: EMAIL_ADDRESS e EMAIL_PASSWORD, credenciais obrigatoriamente de uma conta do gmail.
  * 2 - É possível também simular o fluxo pela interface web do django restframework, acessando as urls dos endpoints via o navegador.
